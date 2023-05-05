@@ -1,0 +1,123 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+
+html,body{
+    height: 100vh;
+}
+
+body{
+    background: #F0F0F7;
+}
+
+body,
+input,
+button{
+    font: 500 16px Poppins;
+    color: #6A6180
+}
+
+input[type="radio"]{
+    margin-left: 16px;
+    margin-right: 0;
+    align-content: flex-start;
+}
+
+.container{
+    width: 90vw;
+    max-width: 700px;
+}
+
+
+.input-block{
+    margin-top: 32px;
+    position: relative;
+}
+
+.input-block + .input-block{
+    margin-top: 14px;
+}
+.input-block + .input-block-radio{
+    margin-top: 14px;
+}
+
+.input-block-radio + .input-block{
+    margin-top: 14px;
+}
+
+.input-block-radio :first-child{
+    margin-left: 0;
+}
+
+.input-block label{
+    font-size: 14px;
+}
+
+
+.input-block input,
+.input-block select{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #F8F8FC;
+    border: 1px solid #E6E6F0;
+    outline: 0;
+    font: 16px Archivo;
+}
+
+.input-block textarea{
+    border-radius: 8px;
+    background-color: #F8F8FC;
+    border: 1px solid #E6E6F0;
+    outline: 0;
+    font: 16px Archivo;
+}
+
+
+
+.input-block:focus-within::after{
+    width: calc(100% - 32px);
+    height: 3px;
+    content: '';
+    background-color: #808080;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+}
+
+.container button{
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    font: 700 16px Archivo;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #808080;
+    transition: background-color 0.2s;
+}
+
+.container button:hover{
+    background-color: #666;
+}
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    background-color:  #708090;
+}
+
+.page-header .header-content{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin: 32px auto;
+}
+
+.page-header .header-content strong{
+    font: 700 36px Archivo;
+    line-height: 42px;
+    color: #ffffff;
+}
