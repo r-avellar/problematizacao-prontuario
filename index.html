@@ -1,172 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prontuário Digital</title>
 </head>
+
 <body>
-    <header class="page-header"> 
+    <header class="page-header">
         <div class="header-content">
             <strong>Hospital Santa Isabel</strong>
         </div>
     </header>
     <div class="container">
-        <form action="#" method="post">
-           <!--propriedades placeholder e maxlength-->
-           <div class="input-block">
-            <label for="name">Código Paciente: </label>
-            <input type="text"  maxlength="50" required  />
-        </div>
+        <form action="confirmacao.html" method="GET">
+            <div class="input-block">
+                <label for="name">Código Paciente: </label>
+                <input type="text" maxlength="50" required />
+            </div>
             <div class="input-block">
                 <label for="name">Nome: </label>
-                <input type="text" " maxlength="50" required  />
+                <input type="text" " maxlength=" 50" required />
             </div>
-            <!--propriedades placeholder e maxlength-->
+            
             <div class="input-block">
                 <label for="email">Endereço: </label>
-                <input type="text"  maxlength="50"  required />
+                <input type="text" maxlength="50" required />
             </div>
 
             <div class="input-block-radio">
                 <label for="opSexo"> Sexo: </label>
                 <div class="radio-items">
                     <input type="radio" name="opSexo" value="M" /> Masculino
-                    <input  type="radio" name="opSexo" value="F" /> Feminino
+                    <input type="radio" name="opSexo" value="F" /> Feminino
                     <input type="radio" name="opSexo" value="Outro" /> Outros
-                </div>      
+                </div>
             </div>
-            <!--propriedades placeholder, pattern e maxlength-->
+            
             <div class="input-block">
                 <label for="phone">Telefone: </label>
-                <input type="tel" placeholder="(00) 00000-0000"
-                maxlength="15" pattern="\(\d{2}\)\d{5}-\d{4}" required/>
-            </div>         
+                <input type="tel" placeholder="(00) 00000-0000" />
+            </div>
             <div class="input-block">
                 <label for="data">Data Nascimento: </label>
-                <input type="date"  required/>
+                <input type="date" required />
             </div>
 
-
-           
             <div class="input-block-radio">
                 <label for="opSexo"> TCLE: </label>
                 <div class="radio-items">
                     <input type="radio" name="opSexo" value="M" /> Sim
-                    <input  type="radio" name="opSexo" value="F" /> Não
-                </div>      
+                    <input type="radio" name="opSexo" value="F" /> Não
+                </div>
             </div>
 
             <div class="input-block">
                 <label for="comentario">Histórico do Paciente: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4" 
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
             </div>
 
             <div class="input-block">
                 <label for="comentario">Anamnese do Enfermeiro: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4" 
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
-                
             </div>
 
-            
             <div class="input-block">
                 <label for="comentario">Uso prévio de Medicamentos: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4" 
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
-                
             </div>
-            
+
             <div class="input-block">
                 <label for="comentario">Alergias: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4" 
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
-                
             </div>
-            
 
             <div class="input-block-radio">
                 <label for="opSexo"> Exames Recentes: </label>
                 <div class="radio-items">
                     <input type="radio" name="opSexo" value="M" /> Imagem
-                    <input  type="radio" name="opSexo" value="F" /> Laboratorial
-                </div>  
+                    <input type="radio" name="opSexo" value="F" /> Laboratorial
+                </div>
                 <input type="file" accept="image/*,.pdf" />
-            
             </div>
-    
 
             <div class="input-block">
                 <label for="comentario">Evolução Médica: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4" 
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
-                
             </div>
 
             <div class="input-block">
                 <label for="comentario">Conduta: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4" 
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
-                
             </div>
 
             <div class="input-block">
                 <label for="comentario">Exames Splicitados: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4" 
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
-                
             </div>
 
             <div class="input-block">
                 <label for="comentario">Prescrição: </label>
                 <div>
-                    <textarea name="comentario" cols="85" rows="4"
-                        maxlength="255"></textarea>
+                    <textarea name="comentario" cols="85" rows="4" maxlength="255"></textarea>
                 </div>
-                
             </div>
 
             <div class="input-block-radio">
                 <div class="radio-items">
                     <input type="radio" name="opSexo" value="M" /> Internação
-                    <input  type="radio" name="opSexo" value="F" /> Alta
-                    
-                </div>      
+                    <input type="radio" name="opSexo" value="F" /> Alta
+                </div>
             </div>
 
-           
-           <div class="input-block">
-                <button type="submit">Enviar</button>     
-           </div>
-
-           
-           
-                     
-    
+            <div class="input-block">
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </div>
-
-    
-   
-    
-    
-    
 </body>
+
 </html>
